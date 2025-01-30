@@ -1,70 +1,132 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>About Me</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red leopards</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            line-height: 1.6;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-        }
-        .main-info {
-            background: #333;
-            color: #fff;
-            padding: 20px;
-        }
-        .main-info h1 {
+            background-color: #ffe3e3;
             margin: 0;
+            padding: 0;
         }
-        .hobbies, .lewis, .course, .job, .fun-fact {
-            background: #e7e7e7;
-            padding: 15px;
-            margin-bottom: 10px;
+
+        .container {
+            width: 90%;
+            max-width: 600px;
+            margin: 20px auto;
+        }
+
+        .header {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 1.2em;
+            border-radius: 12px;
+        }
+
+        .header h1 {
+            margin: 5px 0;
+            font-size: 1.5em;
+        }
+
+        .button {
+            background: #4a4a4a;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            display: block;
+            width: fit-content;
+            margin: 10px auto;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 1em;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 12px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .card h2 {
+            margin: 0 0 10px;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        .list {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+
+        .list li {
+            margin-bottom: 5px;
+        }
+
+        footer {
+            text-align: center;
+            font-size: 0.9em;
+            color: gray;
+            padding: 10px;
         }
     </style>
 </head>
 <body>
+
     <div class="container">
-        <header class="main-info">
-            <h1>[Fatma Alabdouli]</h1>
-            <h1>Preferred Name: [fatoomy]</h1>
-        </header>
+        <div class="header">
+            <h1>About us</h1>
+            <p>Group Members:</p>
+            <ul class="list">
+                <li>Fatma Alabdouli</li>
+                <li>Sara Alqassab</li>
+                <li>Joud Alsalami</li>
+                <li>Roudha Alfalasi</li>
+            </ul>
+        </div>
 
-        <section class="lewis">
-			<h2>Year at Lewis: [Senior 2]</h2>
-			<h2>Lewis major/minor/concentrations: [Computer Engineer]</h2>
-			<h2>Reasons for pursuing this degree: [To have my own company one day inshalla!]</h2>
-        </section>
+        <a href="#" class="button">A little about us !</a>
 
-		<section class="course">
+        <div class="card">
             <h2>Reasons for Taking This Course</h2>
-            <p>[Major Requirement]</p>
-        </section>
+            <p>We need it to GRADUATE.</p>
+        </div>
 
-		<section class="job">
-            <p>Current/Recent Job</p>
-			<p>[Student]</p>
-        </section>		
+        <div class="card">
+            <h2>Current/Recent Job</h2>
+            <ul class="list">
+                <li>Fatma: Full-time student at AUS</li>
+                <li>Sara: Full-time student at AUS</li>
+                <li>Joud: Full-time student at AUS</li>
+                <li>Roudha: Full-time student at AUS</li>
+            </ul>
+        </div>
 
-        <section class="hobbies">
+        <div class="card">
             <h2>Hobbies and Special Interests</h2>
-            <p>[- Reading
-		    - Cooking
-		    - Decorating]</p>
-        </section>
+            <ul class="list">
+                <li>Fatma: Cooking and Decorating</li>
+                <li>Sara: Reading and Drawing</li>
+                <li>Joud: Drawing</li>
+                <li>Roudha: Reading and Running</li>
+            </ul>
+        </div>
 
-        <section class="fun-fact">
+        <div class="card">
             <h2>Fun Fact</h2>
-            <p>[I can write with both hands at the same time.]</p>
-        </section>
+            <p>We are the fun fact.</p>
+        </div>
     </div>
+
+    <footer>
+        <p>Last Updated on 30/01/2025</p>
+    </footer>
+
 </body>
 </html>
-<footer>
-    <p>Last Updated on 26/01/2025</p>
-</footer>
