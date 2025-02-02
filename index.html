@@ -14,7 +14,7 @@
 
         .container {
             width: 90%;
-            max-width: 600px;
+            max-width: 800px;
             margin: 20px auto;
         }
 
@@ -30,19 +30,6 @@
         .header h1 {
             margin: 5px 0;
             font-size: 1.5em;
-        }
-
-        .button {
-            background: #4a4a4a;
-            color: white;
-            padding: 10px;
-            text-align: center;
-            display: block;
-            width: fit-content;
-            margin: 10px auto;
-            border-radius: 8px;
-            text-decoration: none;
-            font-size: 1em;
         }
 
         .card {
@@ -62,7 +49,7 @@
         .list {
             margin: 0;
             padding: 0;
-            list-style-type: none;
+            list-style-type: square; /* Unordered lists use square icons */
         }
 
         .list li {
@@ -79,6 +66,20 @@
             text-decoration: underline;
         }
 
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            display: block;
+            margin: 10px auto;
+        }
+
+        .member {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
         footer {
             text-align: center;
             font-size: 0.9em;
@@ -93,33 +94,53 @@
         <div class="header">
             <h1>Red Leopards</h1>
             <p><strong>Group Members:</strong></p>
+        </div>
+
+        <!-- Member Profiles -->
+        <div class="card">
+            <h2>Meet Our Team</h2>
+            
+            <div class="member">
+                <img src="images/Fatma.jpg" alt="Fatma Alabdouli" class="profile-img">
+                <p><strong>Fatma Alabdouli</strong></p>
+                <p><a href="mailto:g00086612@aus.edu">g00086612@aus.edu</a></p>
+                <p>I’m Fatma Alabdouli, 23 years old, pursuing a Computer Engineering bachelor’s degree at AUS. I’m counting the days till graduation day, and this is giving me a boost to focus more on my courses because I’ll be graduating soon! I’m excited to apply my engineering skills in my future life!</p>
+            </div>
+
+            <div class="member">
+                <img src="images/Joud.jpg" alt="Joud AlSalami" class="profile-img">
+                <p><strong>Joud AlSalami</strong></p>
+                <p><a href="mailto:g00088761@aus.edu">g00088761@aus.edu</a></p>
+                <p>I am Joud AlSalami, and I am 22 years old. I have grown fond of AUS, and I can’t believe I’ll be graduating soon with a bachelor’s degree in Computer Engineering! I hope I will gain knowledge in engineering management and how to lead in a project assessment in this course.</p>
+            </div>
+
+            <div class="member">
+                <img src="images/Roudha.jpg" alt="Roudha Salem" class="profile-img">
+                <p><strong>Roudha Salem</strong></p>
+                <p><a href="mailto:g00093339@aus.edu">g00093339@aus.edu</a></p>
+                <p>I’m Roudha Salem, 22 years old, and AUS has become a second home to me. It’s surreal to think that graduation is just around the corner, and soon, I’ll be holding my bachelor’s degree in Computer Engineering! I’m excited to dive deeper into engineering management, learning to assess projects with confidence and understanding!</p>
+            </div>
+
+            <div class="member">
+                <img src="images/Sara.jpg" alt="Sara Alqassab" class="profile-img">
+                <p><strong>Sara Alqassab</strong></p>
+                <p><a href="mailto:g00086607@aus.edu">g00086607@aus.edu</a></p>
+                <p>My name is Sara Alqassab, a 23-year-old computer engineering student with a passion for AI and technology. With one semester left until graduation, I’m eager to expand my skills. In this Software Engineering course, I hope to learn best practices for building efficient software, improve my teamwork and project management skills, and gain hands-on experience with modern tools. I’m excited to apply my knowledge to real-world challenges.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>What We Hope to Learn in This Course</h2>
             <ul class="list">
-                <li>Fatma Alabdouli - <a href="mailto:g00086612@aus.edu">g00086612@aus.edu</a></li>
-                <li>Sara Alqassab - <a href="mailto:g00086607@aus.edu">g00086607@aus.edu</a></li>
-                <li>Joud Alsalami - <a href="mailto:g00088761@aus.edu">g00088761@aus.edu</a></li>
-                <li>Roudha Alfalasi - <a href="mailto:g00093339@aus.edu">g00093339@aus.edu</a></li>
+                <li>Web development techniques</li>
+                <li>Best practices in HTML, CSS, and JavaScript</li>
+                <li>Accessibility and usability in web design</li>
+                <li>Improving teamwork and collaboration skills</li>
             </ul>
         </div>
 
-        <a href="#" class="button">A little about us!</a>
-
         <div class="card">
-            <h2>Reasons for Taking This Course</h2>
-            <p>We need it to GRADUATE.</p>
-        </div>
-
-        <div class="card">
-            <h2>Current/Recent Job</h2>
-            <ul class="list">
-                <li>Fatma: Full-time student at AUS</li>
-                <li>Sara: Full-time student at AUS</li>
-                <li>Joud: Full-time student at AUS</li>
-                <li>Roudha: Full-time student at AUS</li>
-            </ul>
-        </div>
-
-        <div class="card">
-            <h2>Hobbies and Special Interests</h2>
+            <h2>My Favorite Hobby</h2>
             <ul class="list">
                 <li>Fatma: Cooking and Decorating</li>
                 <li>Sara: Reading and Drawing</li>
@@ -129,13 +150,18 @@
         </div>
 
         <div class="card">
+            <h2>Reasons for Taking This Course</h2>
+            <p>We need it to <strong>GRADUATE</strong>.</p>
+        </div>
+
+        <div class="card">
             <h2>Fun Fact</h2>
             <p>We are the fun fact.</p>
         </div>
     </div>
 
     <footer>
-        <p>Last Updated on 30/01/2025</p>
+        <p>Last Updated on 02/02/2025</p>
     </footer>
 
 </body>
